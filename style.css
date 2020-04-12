@@ -1,0 +1,375 @@
+/* stworzone przez
+Michał Sypniewski
+mi.sypniewski@gmail.com */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* background-color: red; */
+}
+
+.navigation a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  margin: 0 5px;
+  padding: 10px 5px;
+}
+
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("img/1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.home__title {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.home__text {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+main {
+  position: relative;
+  margin-top: 100vh;
+  background-color: white;
+}
+
+.services {
+  width: 100vw;
+  max-width: 1024px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.service {
+  position: relative;
+  width: 95vw;
+  max-width: 1024px;
+  margin: 60px auto 0;
+}
+
+.service__header {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.service__header--left {
+  text-align: left;
+}
+
+.service__header--right {
+  text-align: right;
+}
+
+.service__line {
+  width: 40vw;
+  max-width: 450px;
+  height: 0;
+  border: 1px solid #dc3545;
+}
+
+.service__line--left {
+  position: absolute;
+  left: 0;
+}
+
+.service__line--right {
+  position: absolute;
+  right: 0;
+}
+
+.service__img {
+  position: relative;
+  width: 100%;
+}
+
+.service__img-first::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: -40px;
+  background-image: url("img/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90vw;
+  max-width: 620px;
+  height: 350px;
+  opacity: 0.5;
+}
+
+.service__img-second::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  background-image: url("img/4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90vw;
+  max-width: 620px;
+  height: 240px;
+  opacity: 0.3;
+}
+
+.service__img-third::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -40px;
+  background-image: url("img/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90vw;
+  max-width: 620px;
+  height: 430px;
+  opacity: 0.5;
+  /* z-index: 1; */
+}
+
+.service__img-fourth::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  background-image: url("img/5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90vw;
+  max-width: 620px;
+  height: 160px;
+  opacity: 0.3;
+}
+
+.service__list {
+  width: 60vw;
+  max-width: 460px;
+  margin-top: 25px;
+  position: relative;
+  list-style: square inside none;
+}
+
+.service__list--left {
+  /* margin-left: 20px; */
+}
+
+.service__list--right {
+  margin-left: auto;
+}
+
+.service__item {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f0f2f5;
+}
+
+.about__wrapper {
+  width: 95vw;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.about__header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.about__text {
+  font-size: 12px;
+  margin: 10px auto;
+}
+
+.about__line {
+  width: 40vw;
+  max-width: 450px;
+  height: 0;
+  border: 1px solid #dc3545;
+  margin-bottom: 30px;
+}
+
+.contact {
+  width: 95vw;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.contact__header {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact__line {
+  width: 40vw;
+  max-width: 450px;
+  height: 0;
+  border: 1px solid #dc3545;
+  margin-bottom: 30px;
+}
+
+.contact__wrapper {
+  margin: 20px auto;
+}
+
+.contact__text {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  .service__img-first::before {
+    height: 320px;
+  }
+
+  .service__img-second::before {
+    left: 50px;
+  }
+
+  .service__img-third::before {
+    height: 390px;
+  }
+
+  .service__img-fourth::before {
+    left: 50px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .navigation a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .home__title {
+    font-size: 42px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+  }
+
+  .home__text {
+    font-size: 24px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+  }
+
+  .services {
+    padding-bottom: 100px;
+  }
+
+  .service {
+    margin-top: 70px;
+  }
+
+  .service__header,
+  .about__header,
+  .contact__header {
+    font-size: 24px;
+  }
+
+  .service__list {
+    width: 50vw;
+  }
+
+  .service__item,
+  .about__text,
+  .contact__text {
+    font-size: 16px;
+  }
+
+  .service__img-first::before {
+    height: 290px;
+  }
+
+  .service__img-second::before {
+    top: 60px;
+    left: 140px;
+  }
+
+  .service__img-fourth::before {
+    top: 60px;
+    left: 140px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service__list {
+    width: 40vw;
+  }
+
+  .service__img-first::before {
+    height: 290px;
+  }
+
+  .service__img-second::before {
+    top: 60px;
+    left: 400px;
+    height: 240px;
+  }
+
+  .service__img-third::before {
+    height: 350px;
+  }
+
+  .service__img-fourth::before {
+    top: 40px;
+    left: 400px;
+    height: 190px;
+  }
+}
